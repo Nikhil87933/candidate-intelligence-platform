@@ -35,6 +35,7 @@ class Settings(BaseSettings):
     ollama_host: str = "localhost"
     ollama_port: int = 11434
     ollama_model: str = "qwen2.5:3b"
+    ollama_embedding_model: str = "nomic-embed-text"
 
     @property
     def database_url(self) -> str:
