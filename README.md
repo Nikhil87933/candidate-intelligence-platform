@@ -133,3 +133,5 @@ on every Pull Request.
 ## License
 
 MIT License.
+
+Repository workflow is validated through pull requests and CI checks.
