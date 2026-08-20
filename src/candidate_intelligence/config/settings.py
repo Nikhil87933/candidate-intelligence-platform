@@ -27,6 +27,7 @@ class Settings(BaseSettings):
     minio_access_key: str
     minio_secret_key: str
     minio_secure: bool = False
+    minio_bucket_resumes: str = "resumes"
 
     qdrant_host: str
     qdrant_port: int = 6333

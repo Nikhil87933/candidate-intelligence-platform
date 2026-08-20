@@ -19,3 +19,4 @@ def test_settings_can_be_created() -> None:
     assert settings.postgres_host == "localhost"
     assert settings.postgres_port == 5432
     assert settings.qdrant_port == 6333
+    assert settings.minio_bucket_resumes == "resumes"
