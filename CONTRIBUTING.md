@@ -8,7 +8,7 @@ Clone the repository.
 
 ```bash
 git clone <repository-url>
-cd enterprise-python-template
+cd candidate-intelligence-platform
 ```
 
 Create and activate a virtual environment.

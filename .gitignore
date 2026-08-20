@@ -32,3 +32,13 @@ htmlcov/
 # OS Files
 .DS_Store
 Thumbs.db
+# Local environment
+.venv/
+
+# Runtime data
+data/
+uploads/
+
+# Python tooling
+htmlcov/
+.coverage

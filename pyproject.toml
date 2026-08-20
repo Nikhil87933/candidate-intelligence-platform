@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "enterprise-python-template"
+name = "candidate-intelligence-platform"
 version = "0.1.0"
-description = "Reusable enterprise-grade Python project template with modern tooling, testing, CI, and Docker."
+description = "AI-powered candidate intelligence and recruitment matching platform."
 readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"
@@ -15,7 +15,16 @@ authors = [
 ]
 
 dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "sqlalchemy>=2.0",
+    "psycopg2-binary>=2.9",
     "pydantic-settings>=2.10",
+    "minio>=7.2",
+    "qdrant-client>=1.12",
+    "pymupdf>=1.24",
+    "python-docx>=1.1",
+    "python-multipart>=0.0.9",
 ]
 
 [project.optional-dependencies]
