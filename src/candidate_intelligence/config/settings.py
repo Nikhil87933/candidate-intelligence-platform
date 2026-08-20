@@ -32,6 +32,10 @@ class Settings(BaseSettings):
     qdrant_host: str
     qdrant_port: int = 6333
 
+    ollama_host: str = "localhost"
+    ollama_port: int = 11434
+    ollama_model: str = "qwen2.5:3b"
+
     @property
     def database_url(self) -> str:
         """Build the PostgreSQL SQLAlchemy connection URL."""
@@ -45,3 +49,8 @@ class Settings(BaseSettings):
     def qdrant_url(self) -> str:
         """Build the Qdrant connection URL."""
         return f"http://{self.qdrant_host}:{self.qdrant_port}"
+
+    @property
+    def ollama_url(self) -> str:
+        """Build the Ollama connection URL."""
+        return f"http://{self.ollama_host}:{self.ollama_port}"

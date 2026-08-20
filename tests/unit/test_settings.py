@@ -20,3 +20,7 @@ def test_settings_can_be_created() -> None:
     assert settings.postgres_port == 5432
     assert settings.qdrant_port == 6333
     assert settings.minio_bucket_resumes == "resumes"
+    assert settings.ollama_host == "localhost"
+    assert settings.ollama_port == 11434
+    assert settings.ollama_model == "qwen2.5:3b"
+    assert settings.ollama_url == "http://localhost:11434"
