@@ -36,6 +36,8 @@ class Settings(BaseSettings):
     ollama_port: int = 11434
     ollama_model: str = "qwen2.5:3b"
     ollama_embedding_model: str = "nomic-embed-text"
+    qdrant_collection_candidates: str = "candidates"
+    embedding_vector_size: int = 768
 
     @property
     def database_url(self) -> str:

@@ -25,3 +25,5 @@ def test_settings_can_be_created() -> None:
     assert settings.ollama_model == "qwen2.5:3b"
     assert settings.ollama_url == "http://localhost:11434"
     assert settings.ollama_embedding_model == "nomic-embed-text"
+    assert settings.qdrant_collection_candidates == "candidates"
+    assert settings.embedding_vector_size == 768
