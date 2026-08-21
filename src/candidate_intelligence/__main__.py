@@ -1,9 +1,16 @@
 """Candidate Intelligence Platform entry point."""
 
+import uvicorn
+
 
 def main() -> None:
-    """Run the Candidate Intelligence Platform."""
-    print("Candidate Intelligence Platform")
+    """Run the Candidate Intelligence Platform API."""
+    uvicorn.run(
+        "candidate_intelligence.app:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=True,
+    )
 
 
 if __name__ == "__main__":
